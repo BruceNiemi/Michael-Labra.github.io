@@ -99,9 +99,9 @@ export default function HomePage() {
               See What Makes Us Different
             </p>
             <button className="mt-8 bg-gradient-to-t from-[#f77062] to-[#fe5196] text-white px-8 py-4 rounded relative overflow-hidden group">
-              <span className="relative z-10">
+              <a href="tel:4315574253" className="relative z-10">
                 Contact Me Here: (431)-557-4253
-              </span>
+              </a>
               <span className="absolute top-0 left-0 w-0 h-full bg-[#4837ff] transition-all duration-300 group-hover:w-full rounded"></span>
             </button>
           </div>
