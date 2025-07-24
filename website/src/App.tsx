@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
+import Hero from "./components/hero";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Header />
+      <Hero />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
