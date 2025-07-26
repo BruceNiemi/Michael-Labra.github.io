@@ -12,11 +12,11 @@ export default function Hero() {
           <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-t from-purple-500 to-cyan-400 bg-clip-text text-transparent mt-4">
             & COOLING MECHANICAL CO.
           </h2>
-          <p className="text-white text-lg md:text-xl font-semibold mt-4">
+          <p className="text-black text-lg md:text-xl font-semibold mt-4">
             See What Makes Us Different
           </p>
           <Button className="mt-6" asChild>
-            <a href="tel:(431)-557-4253">Contact Me Here: (431)-557-4253</a>
+            <a href="tel:(431)-557-4253">Contact Me: (431)-557-4253</a>
           </Button>
         </div>
         <div className="flex justify-center">
