@@ -1,88 +1,119 @@
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+
 const brands = [
   {
     name: "Rheem",
-    logo: "/images/brands/rheem.svg",
+    logo: "/brands/rheem.svg",
   },
   {
     name: "Ducane",
-    logo: "/images/brands/ducane.png",
+    logo: "/brands/ducane.png",
   },
   {
     name: "Samsung",
-    logo: "/images/brands/samsung.png",
+    logo: "/brands/samsung.png",
   },
   {
     name: "Allied Commercial",
-    logo: "/images/brands/allied-commercial.png",
+    logo: "/brands/allied-commercial.png",
   },
   {
     name: "Fresh-AirUV",
-    logo: "/images/brands/fresh-air-uv.png",
+    logo: "/brands/fresh-air-uv.png",
   },
   {
     name: "AO Smith",
-    logo: "/images/brands/ao-smith.png",
+    logo: "/brands/ao-smith.png",
   },
   {
     name: "Comfort-Aire",
-    logo: "/images/brands/comfort-aire.png",
+    logo: "/brands/comfort-aire.png",
   },
   {
     name: "Daikin",
-    logo: "/images/brands/daikin.png",
+    logo: "/brands/daikin.png",
   },
   {
     name: "Danfoss",
-    logo: "/images/brands/danfoss.svg",
+    logo: "/brands/danfoss.svg",
   },
   {
     name: "Electrohome",
-    logo: "/images/brands/electrohome.png",
+    logo: "/brands/electrohome.png",
   },
   {
     name: "Engineered Air",
-    logo: "/images/brands/engineered-air.png",
+    logo: "/brands/engineered-air.png",
   },
   {
     name: "G.E",
-    logo: "/images/brands/ge.png",
+    logo: "/brands/ge.png",
   },
   {
     name: "Honeywell",
-    logo: "/images/brands/honeywell.png",
+    logo: "/brands/honeywell.png",
   },
   {
     name: "Johnson Controls",
-    logo: "/images/brands/johnson-controls.png",
+    logo: "/brands/johnson-controls.png",
   },
   {
     name: "KeepRite",
-    logo: "/images/brands/keeprite.png",
+    logo: "/brands/keeprite.png",
   },
   {
     name: "Lennox",
-    logo: "/images/brands/lennox.png",
+    logo: "/brands/lennox.png",
   },
   {
     name: "Liebert",
-    logo: "/images/brands/liebert.png",
+    logo: "/brands/liebert.png",
   },
   {
     name: "Modine",
-    logo: "/images/brands/modine.png",
+    logo: "/brands/modine.png",
   },
   {
     name: "Nailor",
-    logo: "/images/brands/nailor.png",
+    logo: "/brands/nailor.png",
   },
   {
     name: "Payne",
-    logo: "/images/brands/payne.jpg",
+    logo: "/brands/payne.jpg",
   },
   {
     name: "Reznor",
-    logo: "/images/brands/reznor.png",
+    logo: "/brands/reznor.png",
   },
 ];
 
-export default function Brands() {}
+export default function Brands() {
+  return (
+    <section>
+      <div className="mt-4">
+        <h2 className="text-3xl font-bold mb-10">Our Trusted Brands</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-6 py-12">
+          {brands.map((brand) => (
+            <Card key={brand.name}>
+              <CardHeader>
+                <img
+                  src={brand.logo}
+                  alt={brand.name}
+                  className="w-full h-32 object-contain"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle>{brand.name}</CardTitle>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}

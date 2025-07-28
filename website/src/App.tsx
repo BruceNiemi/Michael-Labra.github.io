@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Testimonials from "./components/testimonials";
+import Brands from "./components/brands";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -15,6 +16,7 @@ function App() {
       <Header />
       <Hero />
       <Testimonials />
+      <Brands />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
