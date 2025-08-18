@@ -1,18 +1,16 @@
 import "./App.css";
+import AboutInformation from "./components/about";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Hero from "./components/hero";
-import Services from "./components/services";
 
-function App() {
+function About() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Services />
+      <AboutInformation />
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default About;

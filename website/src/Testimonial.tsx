@@ -1,18 +1,16 @@
 import "./App.css";
 import Footer from "./components/footer";
 import Header from "./components/header";
-import Hero from "./components/hero";
-import Services from "./components/services";
+import Testimonials from "./components/testimonials";
 
-function App() {
+function Testimonial() {
   return (
     <div>
       <Header />
-      <Hero />
-      <Services />
+      <Testimonials />
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default Testimonial;

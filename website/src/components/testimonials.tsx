@@ -28,9 +28,11 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section>
-      <div className="container mx-auto text-center">
-        <h2 className="text-3xl font-bold mb-10">What Our Clients Says</h2>
+    <section id="testimonials">
+      <div className="container mx-auto text-center py-5">
+        <h2 className="text-3xl font-bold mb-10 text-foreground">
+          What Our Clients Say
+        </h2>
         <Carousel
           className="w-full max-w-3xl mx-auto"
           plugins={[
@@ -45,11 +47,15 @@ export default function Testimonials() {
               <CarouselItem key={index}>
                 <Card className="shadow-lg rounded-2xl">
                   <CardContent className="p-8 flex flex-col items-center text-center">
-                    <p className="text-lg italic text-gray-700 mb-4">
+                    <p className="text-lg italic text-muted-foreground mb-4">
                       "{t.testimonial}"
                     </p>
-                    <div className="font-semibold text-gray-900">{t.name}</div>
-                    <div className="text-sm text-gray-500">{t.role}</div>
+                    <div className="font-semibold text-foreground">
+                      {t.name}
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      {t.role}
+                    </div>
                   </CardContent>
                 </Card>
               </CarouselItem>

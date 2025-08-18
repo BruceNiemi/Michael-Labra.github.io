@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const brands = [
   {
@@ -94,20 +89,22 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section>
-      <div className="mt-4">
-        <h2 className="text-3xl font-bold mb-10">Our Trusted Brands</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto px-6 py-12">
+    <section className="py-12">
+      <div className="mt-4 max-w-6xl mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-10 text-center">
+          Our Trusted Brands
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
           {brands.map((brand) => (
-            <Card key={brand.name}>
-              <CardHeader>
+            <Card key={brand.name} className="w-full max-w-sm">
+              <CardHeader className="flex items-center justify-center">
                 <img
                   src={brand.logo}
                   alt={brand.name}
                   className="w-full h-32 object-contain"
                 />
               </CardHeader>
-              <CardContent>
+              <CardContent className="text-center">
                 <CardTitle>{brand.name}</CardTitle>
               </CardContent>
             </Card>

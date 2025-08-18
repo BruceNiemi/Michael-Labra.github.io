@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <SectionWithLinks
           title="About Us"
-          links={[{ href: "/", label: "Testimonials" }]}
+          links={[{ href: "/testimonials.html", label: "Testimonials" }]}
         />
         <SectionWithLinks
           title="Contact Us"

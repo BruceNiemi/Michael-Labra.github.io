@@ -8,16 +8,15 @@ import {
 
 export default function Header() {
   return (
-    <nav className="container mx-auto flex items-center justify-between py-4 px-6">
-      {/* Logo */}
+    <nav className="container mx-auto flex items-center justify-between py-4 px-6 sticky top-0 z-50 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b border-border">
       <a
         href="/"
         className={cn(
-          "flex items-center text-lg font-bold text-gray-800 hover:text-blue-600"
+          "flex items-center text-lg font-bold text-foreground hover:text-primary transition-colors"
         )}
       >
-        <i className="fas fa-gem mr-2"></i>
-        NEXT GENERATION TECHNOLOGY
+        <img src="/public/logo.png" alt="Logo" className="h-20 mr-2" />
+        <div className="fas fa-gem mr-2">NEXT GENERATION TECHNOLOGY</div>
       </a>
 
       {/* Navigation Links */}
@@ -25,23 +24,23 @@ export default function Header() {
         <li>
           <a
             href="/"
-            className="text-gray-800 hover:text-blue-600 transition-colors"
+            className="text-foreground/80 hover:text-primary transition-colors"
           >
             Home
           </a>
         </li>
         <li>
           <a
-            href="/tech.html"
-            className="text-gray-800 hover:text-blue-600 transition-colors"
+            href="/about.html"
+            className="text-foreground/80 hover:text-primary transition-colors"
           >
-            Tech
+            About
           </a>
         </li>
         <li>
           <a
-            href="/products"
-            className="text-gray-800 hover:text-blue-600 transition-colors"
+            href="/products.html"
+            className="text-foreground/80 hover:text-primary transition-colors"
           >
             Products
           </a>
@@ -51,35 +50,35 @@ export default function Header() {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <button
-            className="block md:hidden text-gray-800 focus:outline-none"
+            className="block md:hidden text-foreground focus:outline-none"
             id="mobile-menu-toggle"
           >
-            <span className="block w-6 h-1 bg-gray-800 mb-1"></span>
-            <span className="block w-6 h-1 bg-gray-800 mb-1"></span>
-            <span className="block w-6 h-1 bg-gray-800"></span>
+            <span className="block w-6 h-1 bg-foreground mb-1"></span>
+            <span className="block w-6 h-1 bg-foreground mb-1"></span>
+            <span className="block w-6 h-1 bg-foreground"></span>
           </button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent className="w-48 bg-white shadow-md">
+        <DropdownMenuContent className="w-48 bg-popover text-popover-foreground border border-border shadow-md">
           <DropdownMenuItem asChild>
             <a
               href="/"
-              className="text-gray-800 hover:text-blue-600 transition-colors"
+              className="w-full text-foreground/80 hover:text-primary transition-colors"
             >
               Home
             </a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <a
-              href="/tech.html"
-              className="text-gray-800 hover:text-blue-600 transition-colors"
+              href="/about.html"
+              className="w-full text-foreground/80 hover:text-primary transition-colors"
             >
-              Tech
+              About
             </a>
           </DropdownMenuItem>
           <DropdownMenuItem asChild>
             <a
-              href="/products"
-              className="text-gray-800 hover:text-blue-600 transition-colors"
+              href="/products.html"
+              className="w-full text-foreground/80 hover:text-primary transition-colors"
             >
               Products
             </a>
